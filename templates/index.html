@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<HTML>
+    <HEAD>
+        <TITLE>What's the average height?</TITLE>
+        <LINK href="../static/main.css" rel="stylesheet">
+    </HEAD>
+    <BODY>
+        <CENTER><DIV class="box">
+            <H1>average height</H1>
+            <P class="subtitle">
+                Insert your e-mail address and your height to <BR>find out the average height we calculated. <BR>Are you <STRONG>taller</STRONG> or <STRONG>shorter</STRONG>?<BR>
+            </P>
+        <MAIN>
+            <FORM action="{{url_for('answer')}}" method="POST">
+                <INPUT title="Your email" placeholder="Enter your e-mail address" type="email" name="email_name" required><BR>
+                <INPUT title="Your height" placeholder="Enter your height in cm" type="number" max="250" name="height_name" required><BR><BR>
+                <BUTTON type="submit"><B>(<SPAN class="capital">S</SPAN>)UBMIT</B></BUTTON>
+            </FORM>
+        </MAIN>
+        </DIV></CENTER>
+    </BODY>
+</HTML>
